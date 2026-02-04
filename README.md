@@ -55,8 +55,7 @@ disability at six months.
 │   ├── main_analysis.py        # Main analysis
 │
 └── output/                      # Generated outputs
-   ├── figures/                # Plots
-   └── tables/                 # Result tables
+   └── figures/                # Plots
 ```
 
 ## Requirements
