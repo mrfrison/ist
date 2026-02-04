@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # IST
 
 > The following in an econometric analysis of the IST data (one of the
@@ -26,9 +20,9 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 -   [Data](#data)
 -   [Data Cleaning](#cleaning)
 -   [Methodology](#methodology)
--   [Results] (#results)
+-   [Results](#results)
 
-## Overview {#overview}
+## Overview
 
 Stroke is a leading cause of death and disability worldwide, making the
 search for effective treatments a critical area of medical research. The
@@ -39,7 +33,7 @@ to assess the effects of aspirin and heparin—alone or in com-
 bination—on stroke outcomes, particularly focusing on survival and
 disability at six months.
 
-## Repository Structure {#structure}
+## Repository Structure
 
 ```         
 .
@@ -65,7 +59,7 @@ disability at six months.
    └── tables/                 # Result tables
 ```
 
-## Requirements {#requirements}
+## Requirements
 
 -   Python 3.8 or higher
 -   See `requirements.txt` for package dependencies
@@ -74,7 +68,7 @@ disability at six months.
 visualisations - `matplotlib` - Statistical models - `statsmodels` -
 Modified Causal Forest - `ModifiedCausalForest`
 
-## Installation {#installation}
+## Installation
 
 **Clone the repository**
 
@@ -83,7 +77,7 @@ git clone https://github.com/mrfrison/ist.git
 cd ist
 ```
 
-## Data {#data}
+## Data
 
 **Primary Dataset**: The International Stroke Trial database -
 <https://pmc.ncbi.nlm.nih.gov/articles/PMC3104487/>
@@ -116,7 +110,7 @@ The dataset analysed consists of the following variables:
 | COUNTRY | Abbreviated country code |
 
 
-## Data Cleaning {#cleaning}
+## Data Cleaning
 
 -   **Missing values**: I coded a function that inspects the dataset for
     NAs. It showed that, for the variables RATRIAL and RASP3, there are
@@ -192,7 +186,7 @@ treatment status.
 
 Table 1: Means and standard deviations by treatment status
 
-## Methodology {#methodology}
+## Methodology
 
 ### ATE estimate by means difference
 
@@ -437,7 +431,7 @@ to guide personalized policy, targeted marketing, or risk-stratified
 medicine with granular data on how the treatement affects the various
 subgroups of the population.
 
-## Results {#results}
+## Results
 
 ### Heterogeneity in effects
 The most relevant estimates to understand treatment heterogeneity are
@@ -486,17 +480,23 @@ between the stroke and randomization (RDELAY) suggests that aspirin
 reduces to a greater extent the probability of death of patients that
 are hospitalized many hours after the stroke.
 
-Regression on age \| Variable \| coeff \| se \| t-value \| p-value \| \|
+Regression on age 
+
+\| Variable \| coeff \| se \| t-value \| p-value \| \|
 --------- \| --------- \| -------- \| ---------- \| ------- \| \|
 intercept \| 0.036285 \| 0.003012 \| 12.046842 \| 0.000 \| \| age \|
 -0.000495 \| 0.000041 \| -11.957766 \| 0.000 \|
 
-Regression on rsbp \| Variable \| coeff \| se \| t-value \| p-value \|
+Regression on rsbp 
+
+\| Variable \| coeff \| se \| t-value \| p-value \|
 \| --------- \| --------- \| -------- \| --------- \| ------- \| \|
 intercept \| 0.022625 \| 0.002819 \| 8.026694 \| 0.000 \| \| rsbp \|
 -0.000137 \| 0.000017 \| -7.883954 \| 0.000 \|
 
-Regression on rdelay \| Variable \| coeff \| se \| t-value \| p-value \|
+Regression on rdelay 
+
+\| Variable \| coeff \| se \| t-value \| p-value \|
 \| --------- \| --------- \| -------- \| ---------- \| ------- \| \|
 intercept \| 0.015143 \| 0.000903 \| 16.771222 \| 0.000 \| \| rdelay \|
 -0.000719 \| 0.000038 \| -18.801620 \| 0.000 \|
