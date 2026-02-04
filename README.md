@@ -62,9 +62,12 @@ disability at six months.
 
 See `requirements.txt` for package dependencies
 
-**Key packages:** - `numpy` - numerical computations - `pandas` - data
-handling - `matplotlib` - data visualisations - `statsmodels` - statistical models
-`ModifiedCausalForest` - causal machine learning, individual effects
+**Key packages:** 
+-    `numpy`: numerical computations
+-    `pandas`: data handling
+-    `matplotlib`: data visualisations
+-    `statsmodels`: statistical models
+-    `ModifiedCausalForest`: causal machine learning, individual effects
 
 ## Installation
 
