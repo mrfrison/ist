@@ -60,12 +60,11 @@ disability at six months.
 
 ## Requirements
 
--   Python 3.8 or higher
--   See `requirements.txt` for package dependencies
+See `requirements.txt` for package dependencies
 
-**Key packages:** - `numpy` - Numerical computations - `pandas` - Data
-visualisations - `matplotlib` - Statistical models - `statsmodels` -
-Modified Causal Forest - `ModifiedCausalForest`
+**Key packages:** - `numpy` - numerical computations - `pandas` - data
+handling - `matplotlib` - data visualisations - `statsmodels` - statistical models
+`ModifiedCausalForest` - causal machine learning, individual effects
 
 ## Installation
 
