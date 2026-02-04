@@ -480,17 +480,23 @@ between the stroke and randomization (RDELAY) suggests that aspirin
 reduces to a greater extent the probability of death of patients that
 are hospitalized many hours after the stroke.
 
-Regression on age \| Variable \| coeff \| se \| t-value \| p-value \| \|
+Regression on age 
+
+\| Variable \| coeff \| se \| t-value \| p-value \| \|
 --------- \| --------- \| -------- \| ---------- \| ------- \| \|
 intercept \| 0.036285 \| 0.003012 \| 12.046842 \| 0.000 \| \| age \|
 -0.000495 \| 0.000041 \| -11.957766 \| 0.000 \|
 
-Regression on rsbp \| Variable \| coeff \| se \| t-value \| p-value \|
+Regression on rsbp 
+
+\| Variable \| coeff \| se \| t-value \| p-value \|
 \| --------- \| --------- \| -------- \| --------- \| ------- \| \|
 intercept \| 0.022625 \| 0.002819 \| 8.026694 \| 0.000 \| \| rsbp \|
 -0.000137 \| 0.000017 \| -7.883954 \| 0.000 \|
 
-Regression on rdelay \| Variable \| coeff \| se \| t-value \| p-value \|
+Regression on rdelay 
+
+\| Variable \| coeff \| se \| t-value \| p-value \|
 \| --------- \| --------- \| -------- \| ---------- \| ------- \| \|
 intercept \| 0.015143 \| 0.000903 \| 16.771222 \| 0.000 \| \| rdelay \|
 -0.000719 \| 0.000038 \| -18.801620 \| 0.000 \|
