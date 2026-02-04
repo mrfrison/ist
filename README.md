@@ -14,11 +14,11 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.or
 ## Table of Contents
 
 -   [Overview](#overview)
--   [Repository Structure](#structure)
+-   [Repository Structure](#repository-structure)
 -   [Requirements](#requirements)
 -   [Installation](#installation)
 -   [Data](#data)
--   [Data Cleaning](#cleaning)
+-   [Data Cleaning](#data-cleaning)
 -   [Methodology](#methodology)
 -   [Results](#results)
 
@@ -79,8 +79,7 @@ cd ist
 
 ## Data
 
-**Primary Dataset**: The International Stroke Trial database -
-<https://pmc.ncbi.nlm.nih.gov/articles/PMC3104487/>
+**Primary Dataset**: [The International Stroke Trial database](https://pmc.ncbi.nlm.nih.gov/articles/PMC3104487/)
 
 The dataset analysed consists of the following variables:
 
@@ -151,40 +150,30 @@ data-reference="tab:means_std_treat_control">1</a> reports the means and
 standard deviations on all variables in the final clean dataset per
 treatment status.
 
-| Variable | Treat Mean | Treat Std | Control Mean | Control Std | Variable | Treat Mean | Treat Std | Control Mean | Control Std |
-|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
-| RXASP | 1.00 | 0.00 | 0.00 | 0.00 | ctry_FINL | 0.00 | 0.05 | 0.00 | 0.05 |
-| FDEAD | 0.22 | 0.42 | 0.23 | 0.42 | ctry_FRAN | 0.00 | 0.01 | 0.00 | 0.01 |
-| AGE | 77.26 | 25.87 | 76.61 | 24.61 | ctry_GREE | 0.01 | 0.09 | 0.01 | 0.09 |
-| RSBP | 160.06 | 27.75 | 160.46 | 27.67 | ctry_HONG | 0.01 | 0.08 | 0.01 | 0.07 |
-| RDELAY | 20.04 | 12.40 | 20.04 | 12.52 | ctry_HUNG | 0.01 | 0.07 | 0.01 | 0.08 |
-| SEX | 0.53 | 0.50 | 0.54 | 0.50 | ctry_INDI | 0.01 | 0.11 | 0.01 | 0.11 |
-| RCT | 0.67 | 0.47 | 0.67 | 0.47 | ctry_ISRA | 0.01 | 0.08 | 0.01 | 0.07 |
-| RVISINF | 0.32 | 0.47 | 0.33 | 0.47 | ctry_ITAL | 0.17 | 0.38 | 0.17 | 0.38 |
-| RATRIAL | 0.17 | 0.38 | 0.17 | 0.37 | ctry_JAPA | 0.00 | 0.02 | 0.00 | 0.02 |
-| RASP3 | 0.21 | 0.41 | 0.22 | 0.41 | ctry_NETH | 0.04 | 0.19 | 0.04 | 0.20 |
-| DASP14 | 0.92 | 0.27 | 0.02 | 0.12 | ctry_NEW | 0.02 | 0.15 | 0.02 | 0.15 |
-| RDEF1 | 0.73 | 0.44 | 0.74 | 0.44 | ctry_NORW | 0.03 | 0.17 | 0.03 | 0.17 |
-| RDEF2 | 0.86 | 0.34 | 0.86 | 0.34 | ctry_POLA | 0.04 | 0.20 | 0.04 | 0.20 |
-| RDEF3 | 0.77 | 0.42 | 0.77 | 0.42 | ctry_PORT | 0.02 | 0.14 | 0.02 | 0.14 |
-| RDEF4 | 0.45 | 0.50 | 0.46 | 0.50 | ctry_ROMA | 0.00 | 0.03 | 0.00 | 0.03 |
-| RDEF5 | 0.19 | 0.40 | 0.20 | 0.40 | ctry_SING | 0.01 | 0.08 | 0.01 | 0.09 |
-| RDEF6 | 0.20 | 0.40 | 0.20 | 0.40 | ctry_SLOK | 0.00 | 0.07 | 0.00 | 0.07 |
-| RDEF7 | 0.12 | 0.33 | 0.12 | 0.32 | ctry_SLOV | 0.00 | 0.05 | 0.00 | 0.05 |
-| RDEF8 | 0.07 | 0.25 | 0.07 | 0.25 | ctry_SOUT | 0.00 | 0.06 | 0.00 | 0.06 |
-| RCONSC | 1.75 | 0.46 | 1.75 | 0.46 | ctry_SPAI | 0.03 | 0.16 | 0.03 | 0.16 |
-| ctry_ARGE | 0.03 | 0.16 | 0.03 | 0.17 | ctry_SRI | 0.00 | 0.03 | 0.00 | 0.03 |
-| ctry_AUSL | 0.03 | 0.17 | 0.03 | 0.17 | ctry_SWED | 0.03 | 0.18 | 0.03 | 0.18 |
-| ctry_AUST | 0.01 | 0.11 | 0.01 | 0.11 | ctry_SWIT | 0.09 | 0.29 | 0.09 | 0.29 |
-| ctry_BELG | 0.01 | 0.12 | 0.01 | 0.12 | ctry_TURK | 0.02 | 0.12 | 0.01 | 0.12 |
-| ctry_BRAS | 0.00 | 0.07 | 0.00 | 0.06 | ctry_UK | 0.32 | 0.46 | 0.31 | 0.46 |
-| ctry_CANA | 0.01 | 0.08 | 0.01 | 0.08 | STYPE_LACS | 0.24 | 0.43 | 0.24 | 0.43 |
-| ctry_CHIL | 0.00 | 0.06 | 0.00 | 0.05 | STYPE_OTH | 0.00 | 0.05 | 0.00 | 0.05 |
-| ctry_CZEC | 0.02 | 0.15 | 0.02 | 0.15 | STYPE_PACS | 0.40 | 0.49 | 0.41 | 0.49 |
-| ctry_DENM | 0.00 | 0.04 | 0.00 | 0.04 | STYPE_POCS | 0.12 | 0.32 | 0.11 | 0.32 |
-| ctry_EIRE | 0.00 | 0.05 | 0.00 | 0.05 | STYPE_TACS | 0.24 | 0.43 | 0.24 | 0.43 |
+| Variable | Treat Mean | Treat Std | Control Mean | Control Std |
+|--------|--------|--------|--------|--------|
+| RXASP | 1.00 | 0.00 | 0.00 | 0.00 |
+| FDEAD | 0.22 | 0.42 | 0.23 | 0.42 |
+| AGE | 77.26 | 25.87 | 76.61 | 24.61 | 
+| RSBP | 160.06 | 27.75 | 160.46 | 27.67 |
+| RDELAY | 20.04 | 12.40 | 20.04 | 12.52 | 
+| SEX | 0.53 | 0.50 | 0.54 | 0.50 |
+| RCT | 0.67 | 0.47 | 0.67 | 0.47 |
+| RVISINF | 0.32 | 0.47 | 0.33 | 0.47 |
+| RATRIAL | 0.17 | 0.38 | 0.17 | 0.37 |
+| RASP3 | 0.21 | 0.41 | 0.22 | 0.41 |
+| DASP14 | 0.92 | 0.27 | 0.02 | 0.12 |
+| RDEF1 | 0.73 | 0.44 | 0.74 | 0.44 |
+| RDEF2 | 0.86 | 0.34 | 0.86 | 0.34 |
+| RDEF3 | 0.77 | 0.42 | 0.77 | 0.42 |
+| RDEF4 | 0.45 | 0.50 | 0.46 | 0.50 |
+| RDEF5 | 0.19 | 0.40 | 0.20 | 0.40 |
+| RDEF6 | 0.20 | 0.40 | 0.20 | 0.40 |
+| RDEF7 | 0.12 | 0.33 | 0.12 | 0.32 |
+| RDEF8 | 0.07 | 0.25 | 0.07 | 0.25 |
+| RCONSC | 1.75 | 0.46 | 1.75 | 0.46 |
 
-Table 1: Means and standard deviations by treatment status
+Table 1: Means and standard deviations by treatment status (country dummies omitted)
 
 ## Methodology
 
@@ -304,17 +293,18 @@ In this case, given that the propensity scores range from 0.484 to
 0.510, there are also no instability issues due to extreme propensity
 scores.
 
-**Logit with AGE, RSBP, RDELAY, SEX, RCT, RVISINF, RATRIAL** \| Variable
-\| mean \| var \| std \| max \| min \| range \| obs \| \| -------- \|
--------- \| -------- \| -------- \| -------- \| -------- \| ------ \|
------ \| \| pscores \| 0.499836 \| 0.000084 \| 0.009175 \| 0.531731 \|
-0.471809 \| 0.0599 \| 18266 \|
+**Logit with AGE, RSBP, RDELAY, SEX, RCT, RVISINF, RATRIAL**
 
-**Logit with Lasso-selected covariates** \| Variable \| mean \| var \|
-std \| max \| min \| range \| obs \| \| -------- \| -------- \| --------
-\| -------- \| -------- \| -------- \| ------ \| ----- \| \| pscores \|
-0.499836 \| 0.000011 \| 0.003243 \| 0.510387 \| 0.484080 \| 0.0263 \|
-18266 \|
+| variable | mean     | var      | std      | max      | min      | range  | obs   |
+| -------- | -------- | -------- | -------- | -------- | -------- | ------ | ----- |
+| pscores  | 0.499836 | 0.000084 | 0.009175 | 0.531731 | 0.471809 | 0.0599 | 18266 |
+
+
+**Logit with Lasso-selected covariates**
+
+| variable | mean     | var      | std      | max      | min      | range  | obs   |
+| -------- | -------- | -------- | -------- | -------- | -------- | ------ | ----- |
+| pscores  | 0.499836 | 0.000011 | 0.003243 | 0.510387 | 0.484080 | 0.0263 | 18266 |
 
 Table 4: Descriptive statistics of the propensity scores
 
@@ -340,34 +330,14 @@ Table 5: ATE estimate by inverse probability weighting
 
 ### CATE estimate via OLS for men and women
 
-Because
-CATE<sub>*m**e**n*</sub> = *E*$$*Y*<sup>1</sup> − *Y*<sup>0</sup>\|*S**E**X* = 1$$
-and
-CATE<sub>*w**o**m**e**n*</sub> = *E*$$*Y*<sup>1</sup> − *Y*<sup>0</sup>\|*S**E**X* = 0$$,
-we can estimate CATE for men and women through the following linear
-model:
-FDEAD<sub>*i*</sub> = *β*<sub>0</sub> + *β*<sub>1</sub>RXASP<sub>*i*</sub> + *β*<sub>2</sub>SEX<sub>*i*</sub> + *β*<sub>3</sub>SEX<sub>*i*</sub> ⋅ RXASP<sub>*i*</sub> + \*γ\*\*X<sub>i</sub> + ε<sub>i\*</sub>.
+Because $CATE_{men} = E[Y^1 - Y^0 | SEX = 1]$ and $\text{CATE}_{women} = E[Y^1 - Y^0 | SEX = 0]$, we can estimate CATE for men and women through the following linear model: $$\text{FDEAD}_i = \beta_0 + \beta_1 \text{RXASP}_i + \beta_2 \text{SEX}_i + \beta_3 \text{SEX}_i \cdot \text{RXASP}_i + \gamma X_i + \varepsilon_i.$$
+
 In fact:
 
--   CATE for women: the model becomes
-    FDEAD<sub>*i*</sub> = *β*<sub>0</sub> + *β*<sub>1</sub>RXASP<sub>*i*</sub> + *γ**X***<sub>i</sub> + ε<sub>i</sub>,
-    so
-    E$$*Y*\|*D* = 1, *S**E**X* = 0$$ − E$$*Y*\|*D* = 0, *S**E**X* = 0$$ = β<sub>0</sub> + β<sub>1</sub> + γX<sub>*i*</sub> − (*β*<sub>0</sub> + \*γ\*\*X<sub>i</sub>) = β\*<sub>1</sub>
+-    **CATE for women**: the model becomes  $\text{FDEAD}_i = \beta_0 + \beta_1 \text{RXASP}_i+ \gamma X_i + \varepsilon_i$, so $E[Y|D=1, SEX = 0] - E[Y | D=0, SEX = 0] = \beta_0 + \beta_1+ \gamma X_i - (\beta_0 + \gamma X_i) = \beta_1$
+-    **CATE for men**: the model becomes $\text{FDEAD}_i = \beta_0 + \beta_2 + (\beta_1 + \beta_3) \text{RXASP}_i + \gamma X_i + \varepsilon_i$, so $E[Y|D=1,SEX = 1] - E[Y| D=0, SEX = 1] = \beta_0 + \beta_2 + (\beta_1 + \beta_3) + \gamma X_i - (\beta_0 + \beta_2 + \gamma X_i) = \beta_1 + \beta_3$
 
--   CATE for men: the model becomes
-    FDEAD<sub>*i*</sub> = *β*<sub>0</sub> + *β*<sub>2</sub> + (*β*<sub>1</sub> + *β*<sub>3</sub>)RXASP<sub>*i*</sub> + *γ**X***<sub>i</sub> + ε<sub>i</sub>,
-    so
-    E$$*Y*\|*D* = 1, *S**E**X* = 1$$ − E$$*Y*\|*D* = 0, *S**E**X* = 1$$ = β<sub>0</sub> + β<sub>2</sub> + (β<sub>1</sub> + β<sub>3</sub>) + γX<sub>*i*</sub> − (*β*<sub>0</sub> + *β*<sub>2</sub> + \*γ\*\*X<sub>i</sub>) = β<sub>1</sub> + β\*<sub>3</sub>
-
-Table <a href="#tab:CATE_OLS" data-reference-type="ref"
-data-reference="tab:CATE_OLS">6</a> reports the results of the OLS
-regression. The coefficient *β̂*<sub>1</sub> is the CATE estimate for
-women and the sum of *β̂*<sub>1</sub> + *β̂*<sub>3</sub> is the CATE
-estimate for men. $\widehat{CATE}\_{women} = \hat \beta_1 = -0.007917$
-and has a standard error of 0.008619, thus it is not statistically
-different from zero.
-$\widehat{CATE}\_{men} = \hat \beta_1 + \hat \beta_3 = -0.015792$. The
-standard error of men’s CATE can be computed as:
+Table <a href="#tab:CATE_OLS" data-reference-type="ref" data-reference="tab:CATE_OLS">6</a> reports the results of the OLS regression. The coefficient $\hat \beta_1$ is the CATE estimate for women and the sum of $\hat \beta_1 + \hat \beta_3$ is the CATE estimate for men. $\hat CATE_{women} = \hat \beta_1 = -0.007917$ and has a standard error of 0.008619, thus it is not statistically different from zero. $\hat CATE_{men} = \hat \beta_1 + \hat \beta_3 = -0.015792$. The standard error of men's CATE can be computed as:
 
 $$SE(\widehat{CATE}\_{men}) = \sqrt{SE(\hat \beta_1)^2 + SE(\hat \beta_3)^2 +2\text{Cov}(\hat \beta_1, \hat \beta_3)} = 0.00848.$$
 
@@ -377,7 +347,7 @@ significant at the 10% level.
 
 To analyze gender heterogeneity we can compute the difference between
 men and women’s CATEs:
-$\widehat{CATE}\_{men} - \widehat{CATE}\_{women} = \hat \beta_1 + \hat \beta_3 - \hat \beta_1 = \hat \beta_3 = -0.0079$
+$\hat CATE_{men} - \hat CATE_{women} = \hat \beta_1 + \hat \beta_3 - \hat \beta_1 = \hat \beta_3 = -0.0079$
 and its standard error, which is 0.0118. Since the standard error is
 greater than the point estimate, we can conclude that there is no
 statistically significant difference between the two. From the small
@@ -412,6 +382,9 @@ IATEs that lie below the 5th percentile of the distribution imply that
 the patient benefits from a reduction of death probability in excess of
 -0.106, those above the 95th percentile show an increase greater than
 0.111.
+
+![IATE_hist](output/figures/IATE_histogram.png)
+Figure 2: IATE histogram
 
 Using a modified causal forest is useful when i) the confounders are
 either too many for a classical parametric approach to be applicable (it
@@ -462,6 +435,10 @@ overlapping across the levels. Therefore, we can conclude that there are
 only minor differences in the distributions and that heterogeneity is
 moderate.
 
+![fig:IATE_cat](output/figures/IATE_boxplots_cat.png)
+Figure 3: IATE boxplots per categorical variable
+
+
 Next, I created scatter plots for the continuous variables (AGE, RSBP,
 and RDELAY) against the estimates of the IATE (see Figure
 <a href="#fig:cont_vars_scatters" data-reference-type="ref"
@@ -480,29 +457,32 @@ between the stroke and randomization (RDELAY) suggests that aspirin
 reduces to a greater extent the probability of death of patients that
 are hospitalized many hours after the stroke.
 
-Regression on age 
+![fig:cont_vars_scatters](output/figures/cont_vars_scatters.png)
+Figure 4: Scatterplots of continuous variables vs IATE
 
-\| Variable \| coeff \| se \| t-value \| p-value \| \|
---------- \| --------- \| -------- \| ---------- \| ------- \| \|
-intercept \| 0.036285 \| 0.003012 \| 12.046842 \| 0.000 \| \| age \|
--0.000495 \| 0.000041 \| -11.957766 \| 0.000 \|
+Regression on age
+
+| variable  | coeff     | se       | t-value    | p-value |
+| --------- | --------- | -------- | ---------- | ------- |
+| intercept | 0.036285  | 0.003012 | 12.046842  | 0.000   |
+| age       | -0.000495 | 0.000041 | -11.957766 | 0.000   |
+
 
 Regression on rsbp 
 
-\| Variable \| coeff \| se \| t-value \| p-value \|
-\| --------- \| --------- \| -------- \| --------- \| ------- \| \|
-intercept \| 0.022625 \| 0.002819 \| 8.026694 \| 0.000 \| \| rsbp \|
--0.000137 \| 0.000017 \| -7.883954 \| 0.000 \|
+| variable  | coeff     | se       | t-value   | p-value |
+| --------- | --------- | -------- | --------- | ------- |
+| intercept | 0.022625  | 0.002819 | 8.026694  | 0.000   |
+| rsbp      | -0.000137 | 0.000017 | -7.883954 | 0.000   |
 
 Regression on rdelay 
 
-\| Variable \| coeff \| se \| t-value \| p-value \|
-\| --------- \| --------- \| -------- \| ---------- \| ------- \| \|
-intercept \| 0.015143 \| 0.000903 \| 16.771222 \| 0.000 \| \| rdelay \|
--0.000719 \| 0.000038 \| -18.801620 \| 0.000 \|
+| variable  | coeff     | se       | t-value    | p-value |
+| --------- | --------- | -------- | ---------- | ------- |
+| intercept | 0.015143  | 0.000903 | 16.771222  | 0.000   |
+| rdelay    | -0.000719 | 0.000038 | -18.801620 | 0.000   |
 
-Table 7: Results of simple linear regressions of IATE against the
-continuous variables
+Table 7: Results of simple linear regressions of IATE against the continuous variables
 
 To dig deeper into the effects heterogeneity I investigated the
 correlates of the extreme values of IATE. To do this I isolated the
@@ -551,6 +531,9 @@ those in the top tail.
 Table 8: Means of dummy variables in top vs bottom 5% of the IATE
 distribution
 
+![fig:means_dummies_top_vs_bottom](output/figures/means_dummies_top_vs_bottom.png)
+Figure 5: Means of dummies in top vs bottom tails of IATE distribution
+
 The bar chart in Figure
 <a href="#fig:rconsc_top_vs_bottom" data-reference-type="ref"
 data-reference="fig:rconsc_top_vs_bottom">6</a> compares the percentage
@@ -561,6 +544,10 @@ in the bottom vs 34% top tail), whereas high IATE scores see a majority
 of observations in the “drowsy” and "unconscious" states. This suggests
 that aspirin can be more effective in reducing the risk of death when
 the patient is completely conscious.
+
+
+![fig:rconsc_prevalence_top_vs_bottom](output/figures/rconsc_prevalence_top_vs_bottom.png)
+Figure 6: Prevalence of consciousness states in top vs bottom tails of IATE distribution
 
 Lastly, I compared the distributions of the continuous variables between
 the two tails. Figure <a href="#fig:age" data-reference-type="ref"
@@ -587,6 +574,18 @@ data-reference="fig:cont_vars_scatters">4</a> and Table
 <a href="#tab:reg_IATE_cont_vars" data-reference-type="ref"
 data-reference="tab:reg_IATE_cont_vars">7</a> might be due to an adverse
 effect of aspirin in the immediate few hours after the stroke.
+
+![fig:age](output/figures/age_hist.png)
+
+Figure 7: Histogram of AGE for the top and bottom tails of IATE distribution
+
+![fig:rsbp](output/figures/rsbp_hist.png)
+
+Figure 8: Histogram of RSBP for the top and bottom tails of IATE distribution
+
+![fig:rdelay](output/figures/rdelay_hist.png)
+
+Figure 9: Histogram of RDELAY for the top and bottom tails of IATE distribution
 
 In light of these findings, I would suggest to treat with aspirin
 conscious patients, especially if an hypertensive crisis with no atrial
